@@ -1,4 +1,5 @@
-consumption.txt",stringsAsFactors=F,sep=";",header=TRUE,na.strings="?")
+## I unzipped the downloaded file and placed the file in my current working directory
+power <- read.table("household_power_consumption.txt",stringsAsFactors=F,sep=";",header=TRUE,na.strings="?")
 power$Date <- as.Date(power$Date, "%d/%m/%Y")
 ## Create a file with only 2-1-07 and 2-2-07 data
 library(dplyr)
